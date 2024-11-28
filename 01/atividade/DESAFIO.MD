@@ -10,6 +10,6 @@ HTTP/1.1 200 Ok
 
 ```json
 {
-    "message": "Hello, World!
+    "message": "Hello, World!"
 }
 ```
