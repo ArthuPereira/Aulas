@@ -8,7 +8,7 @@ Ao acessar a o servidor, deve ser retornada essa mensagem
 HTTP/1.1 200 Ok
 ```
 
-```
+```json
 {
     "message": "Hello, World!
 }
