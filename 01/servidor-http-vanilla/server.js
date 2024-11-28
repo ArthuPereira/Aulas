@@ -1,15 +1,10 @@
-import { once } from 'node:events'
-import { createServer } from 'node:http'
+import { createServer } from 'node:http';
 
-async function HttpHandler(request, response) {
-    try {
-        const data = await once(request, 'data')
-        response.writeHead(200)
-    } catch (e) {
-        response.writeHead(500)
-    }
-}
+const server = createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/plain' })
+    res.end('Hello World!')
+})
 
-const app = createServer(HttpHandler)
-.listen(3333)
-.on('listening', () => console.log("servidor http no ar!"))
+server.listen(3000, '127.0.0.1', () => {
+    console.log('server running')
+})
