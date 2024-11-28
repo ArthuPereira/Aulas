@@ -5,9 +5,7 @@ Sua tarefa é implementar um servidor HTTP utilizando o conteúdo aprendido dura
 ## Exemplo
 Ao acessar a o servidor, deve ser retornada essa mensagem
 ```
-{
-    HTTP/1.1 200 Ok
-}
+HTTP/1.1 200 Ok
 ```
 
 ```
